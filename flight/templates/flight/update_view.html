@@ -1,0 +1,11 @@
+{% extends "flight/layout.html" %}
+
+{% block title %}Update Flight{% endblock %}
+{% block body  %}
+    <h1>Update Flight</h1>
+    <form action="{% url 'flight:update_flight' pk %}" method="post">
+        {% csrf_token %}
+        {{forms.as_p}}
+        <input type="submit" value="Update flight">
+    </form>
+{% endblock %}

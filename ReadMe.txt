@@ -5,3 +5,6 @@ django-admin startproject airlines . - create DJANGO Project
 python manage.py startapp flight - create app
 python manage.py makemigrations - update the tables in the database
 python manage.py migrate - migrate data in the database
+
+python -m venv venv - this is for creating venv
+venv\Scripts\activate - to activate
